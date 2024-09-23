@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  <title>Deal News</title>
+  <style>
+    .narrative {
+      max-width: 40rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <span>
+        <a class="navbar-brand me-1" href="#">Deal News</a>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-item dropdown ms-auto" role="group" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+          <button class="dark-theme-toggle btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme (auto)">
+            <i class="bi bi-circle-half"></i> <span class="d-lg-none ms-2">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><button class="dropdown-item" data-bs-theme-value="light"><i class="me-2 bi bi-sun-fill"></i> Light</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="dark"><i class="me-2 bi bi-moon-stars-fill"></i> Dark</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="auto"><i class="me-2 bi bi-circle-half"></i> Auto</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <h1 class="display-1 my-5 text-center">Deal News</h1>
+    <h2 class="display-6 text-center">Deal news extraction takes a lot of effort.</h2>
+
+    <div class="narrative mx-auto my-3">
+      <p>
+        <strong>Deal news extraction is a manual process.</strong>
+        The first step is to extract the info of a particulary deal from various primary & secondary sources, by researching on Google. The second step is to analysing all the relevant info from the article & then write the deal in client database.
+      </p>
+
+      <p><strong>Primary sources are numerous.</strong> We check the LP/GP company website, Bidder/Buyer company website,
+        Target company website, Seller company webiste & any other PE/VC company website, if it's name is mentioned in the article.</p>
+
+      <p><strong>Secondary sources have high volume.</strong> Sites like
+        <a href="https://www.prnewswire.com/">PR Newswire</a>,
+        <a href="https://www.venturecapitaljournal.com/">Venture Capital Journal</a>,
+        <a href="https://www.pehub.com/">PE Hub</a>,
+        <a href="https://yourstory.com/">Your Story</a>,
+        <a href="https://www.dealstreetasia.com/">Deal Street Asia</a>,
+        <a href="https://globallegalchronicle.com/">Globallegal Chronicle</a>, etc.
+      </p>
+    </div>
+
+    <h2 class="display-6 text-center mt-5">LLMs can automate this extraction.</h2>
+
+
+    <div id="controls"></div>
+    <div id="result" class="table-responsive"></div>
+
+  </div>
+
+  <footer class="my-5 vh-100 d-flex align-items-center justify-content-center">
+    <h1 class="display-4">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>
+  </footer>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js" type="module" a></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@gramex/ui/dist/dark-theme.js" type="module"></script>
+  <script defer type="module" src="script.js"></script>
+</body>
+
+</html>
